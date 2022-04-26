@@ -1,0 +1,85 @@
+// Стили для блока 'Header' и навигационного меню 'Nav'
+
+.header {
+    width: 100%;
+    height: 65px;
+    background: transparent;
+    position:relative;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color:#BAD7DF
+}
+ul{
+    list-style: none;
+}
+.nav {
+    &__container {
+        margin: 0px 215px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-item {
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+
+            a {
+                color: var(--white-color);
+                transition: .3s ease-in-out;
+                text-decoration: none;
+                &:hover {
+                    color: #4d8174;
+                }
+
+                i {
+                    display: block;
+                    font-size: 35px;
+                }
+            }
+        }
+
+        &-input {
+            width: 100px;
+            vertical-align: middle;
+            white-space: nowrap;
+            position: relative;
+
+            input#search {
+                width: 300px;
+                height: 50px;
+                background: #BAD7DF;
+                border: none;
+                font-size: 14px;
+                float: left;
+                color: #63717f;
+                padding-left: 45px;
+                border-radius: 10px;
+                transition: .3s ease-in-out;
+                font-family: inherit;
+
+                &:hover,
+                &:focus,
+                &:active {
+                    outline: none;
+                    background: #99DDCC;
+                    color: var(--accent-color);
+                }
+            }
+
+            &-icon {
+                 position: absolute;
+                 top: 50%;
+                 margin-left: 17px;
+                 margin-top: 13px;
+                 z-index: 1;
+                 color: #4f5b66;
+             }
+    
+    }
+}
+}
