@@ -1,0 +1,14 @@
+
+<main>
+    <div class="box">
+        <h1 class="text">
+            In this site you can found the most funny video's about animal's 
+        </h1>
+
+        <ng-container *ngFor="let item of videoList | async">
+     
+            <app-video-card [video]="item"></app-video-card>
+        </ng-container>
+
+    </div>
+</main>

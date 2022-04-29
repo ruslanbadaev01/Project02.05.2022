@@ -1,0 +1,17 @@
+<div>
+    
+    <span *ngIf="(commentList|async)?.length; else elseBlock " class="home__content-card-box-comments">
+        Comments:
+    </span>
+
+    <ng-template #elseBlock >
+        <span class="home__content-card-box-comments">
+            There is no comments yet 
+        </span>
+    </ng-template>
+
+    <p *ngFor="let item of commentList | async">
+        {{item.text}}
+    </p>
+    
+</div>

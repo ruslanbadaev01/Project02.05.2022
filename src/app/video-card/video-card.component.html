@@ -1,6 +1,6 @@
-<article class="home__content-card">
+
+<article class="home__content-card" [routerLink]="'/video/'+video?.id" >
     <div class="home__content-card-video">
-        <!-- <video src="/assets/Cat.mp4"></video> -->
-        <video class="home__content-card-mp4" src="/assets/video.mp4"></video>
+        <video class="home__content-card-mp4" [src]="video?.url" ></video>
     </div>
 </article>

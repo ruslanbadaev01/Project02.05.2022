@@ -1,7 +1,7 @@
 <article class="home__content-card">
    <div class="home__content-card-box">
-        <video class="home__content-card-mp4" src="/assets/video.mp4" controls></video>
-
+        <video class="home__content-card-mp4" [src]="videoUrl" controls></video>
+        
         <div class="home__content-card-info">
             <span class="home__content-card-info-description">Description</span>
             <div>
@@ -11,11 +11,7 @@
             </div>
         </div>
     </div>
-    <div>
-        <span class="home__content-card-box-comments">
-            Comments:
-        </span>
-    </div>
-    <input type="type you're comment">
-
+    <app-comment-add [id]="videoId"></app-comment-add>
+    <app-comment-list [id]="videoId"></app-comment-list>
+   
 </article>
