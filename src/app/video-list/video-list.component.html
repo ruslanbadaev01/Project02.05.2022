@@ -5,9 +5,10 @@
             In this site you can found the most funny video's about animal's 
         </h1>
 
-        <ng-container *ngFor="let item of videoList | async">
+        <ng-container *ngFor="let item of videoList">
      
             <app-video-card [video]="item"></app-video-card>
+            
         </ng-container>
 
     </div>

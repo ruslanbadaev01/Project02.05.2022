@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable, of } from 'rxjs';
+import { VIDEOS } from '../Videos'; 
 
 export interface IVideo{
   url: string;
@@ -28,7 +29,7 @@ export class VideoService {
 
 
   getVideos() {
-    return of([{url:'/assets/video.mp4',id:1},{url:'/assets/Cat.mp4',id:2},{url:'/assets/Black.mp4',id:3},{url:'/assets/vv.mp4',id:4}])
+    return of(VIDEOS)
   }
 
 }

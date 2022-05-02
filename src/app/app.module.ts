@@ -11,6 +11,7 @@ import { VideoListComponent } from './video-list/video-list.component';
 import { CommentListComponent } from './comment-list/comment-list.component';
 import { CommentAddComponent } from './comment-add/comment-add.component';
 import { FormsModule } from '@angular/forms';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 
 
 
@@ -28,7 +29,9 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    InfiniteScrollModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
