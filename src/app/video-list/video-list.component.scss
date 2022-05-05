@@ -2,17 +2,6 @@
     color:#FFE2E2 ;
     width: 440px;
   
-    &_block{
-        position: relative;
-        left: 520px;
-        // background-image: url("../img/cat.jpg");
-        background-size:cover ;
-        height: 200px;
-        width: 324px;
-    }
-    @media(max-width: 415px){  
-        margin-left: 85px;
-    }
 }
 .video{
     position: relative;

@@ -1,19 +1,13 @@
 .home__content-card {
-    @media(max-width: 415px){  
-        transform: scale(1);
-        margin-left: 10px;
-    }
-    margin-left: 350px;
-    width: 483px;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 482px;
     height: 272px;
-    border: 1px solid #FFF;
-    transform: scale(1.6);
     margin-top: 130px;
 
     &-box{
-     
-        margin: 0 auto;
-        width: 800px;
+        width: 272px;
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-between;
@@ -24,9 +18,9 @@
     }
 
     &-mp4{
-      
         width: 482px;
         height: 272px;
+        margin-bottom: 10px;
     }
 
     &-video {
@@ -45,37 +39,5 @@
         margin-top: 5px;
     }
 
-    &-info {
-        display: flex;
-        margin-left: 36px;
-        align-items: center;
-        justify-content: space-between;
 
-        &-description {
-            margin-right: -77px;
-            margin-bottom: 232px;
-            display: block;
-            font-size: 14px;
-            line-height: 36px;
-            cursor: default;
-        }
-
-        &-btn {
-            width: 80px;
-            height: 40px;
-            background-color: var(--accent-color);
-            transition: .3s ease-in-out;
-            color: var(--white-color);
-            border: none;
-            font-size: 12px;
-            font-weight: 300;
-            cursor: pointer;
-            text-transform: uppercase;
-
-            &:hover {
-                color: #000;
-                background-color: var(--white-color);
-            }
-        }
-    }
 }
