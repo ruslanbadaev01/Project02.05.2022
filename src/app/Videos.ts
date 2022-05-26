@@ -16,5 +16,10 @@ export const VIDEOS = [
     {url:'/assets/Cat.mp4',id: 14},
     {url:'/assets/Black.mp4',id: 15},
     {url:'/assets/vv.mp4',id: 16},
+    {url:'/assets/vv.mp4',id: 17},
+    {url:'/assets/video.mp4',id: 18},
+    {url:'/assets/Cat.mp4',id: 19},
+    {url:'/assets/Black.mp4',id: 20},
+    {url:'/assets/vv.mp4',id: 21},
     
 ];

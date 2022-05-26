@@ -21,7 +21,7 @@ export class VideoListComponent implements OnInit {
   
   constructor( private videoService: VideoService) { 
     this.appendItems(0, this.sum);
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 8; i++) {
       this.loadNewData();
     }
   }
